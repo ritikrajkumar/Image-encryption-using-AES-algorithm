@@ -1,1 +1,1 @@
-# Image-encryption-using-AES-algorithm
+# Image Encryption Using AES Algorithm
