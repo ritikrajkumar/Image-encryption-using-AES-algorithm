@@ -236,7 +236,7 @@ def image_open():
     if enc_pass == "":
         pass_alert()
     else:
-        password = hashlib.sha256(str(enc_pass).encode('utf-8'))
+        password = hashlib.sha256(enc_pass.encode()).digest()
 
         filename = filedialog.askopenfilename()
         file_path_e = os.path.dirname(filename)
@@ -250,7 +250,7 @@ def cipher_open():
     if dec_pass == "":
         pass_alert()
     else:
-        password = hashlib.sha256(str(enc_pass).encode('utf-8'))
+        password = hashlib.sha256(dec_pass.encode()).digest()
         filename = filedialog.askopenfilename()
         file_path_d = os.path.dirname(filename)
         decrypt(filename,password)
