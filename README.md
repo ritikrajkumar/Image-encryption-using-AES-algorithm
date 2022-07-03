@@ -1,2 +1,2 @@
 # Image Encryption Using AES Algorithm
-It helps the users to encrypt and decrypt an image.
+It helps the users to encrypt and decrypt an image using the AES algorithm.
